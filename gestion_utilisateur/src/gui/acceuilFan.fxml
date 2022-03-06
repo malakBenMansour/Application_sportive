@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="546.0" prefWidth="799.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AcceuilFanController">
+   <children>
+      <ImageView fitHeight="560.0" fitWidth="823.0" pickOnBounds="true">
+         <image>
+            <Image url="@img/72fdafa632f90f3cc05748149a1602a6.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="equipebtn" layoutX="283.0" layoutY="307.0" mnemonicParsing="false" onAction="#goequipe" prefHeight="83.0" prefWidth="201.0" style="-fx-background-color: #aac0f9;" text="Equipe" textFill="#18347d">
+         <font>
+            <Font name="Cooper Black" size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="magasinbtn" layoutX="520.0" layoutY="400.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="224.0" style="-fx-background-color: #aac0f9;" text="Magasins" textFill="#18347d">
+         <font>
+            <Font name="Cooper Black" size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="actualitebtn" layoutX="283.0" layoutY="400.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="201.0" style="-fx-background-color: #aac0f9;" text="Actualités" textFill="#18347d">
+         <font>
+            <Font name="Cooper Black" size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="eventbtn" layoutX="516.0" layoutY="308.0" mnemonicParsing="false" onAction="#goevent" prefHeight="83.0" prefWidth="231.0" style="-fx-background-color: #aac0f9;" text="Evénement" textFill="#18347d">
+         <font>
+            <Font name="Cooper Black" size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnlogout" layoutX="751.0" layoutY="493.0" mnemonicParsing="false" onAction="#logout" prefHeight="46.0" prefWidth="64.0" style="-fx-background-color: white;" textFill="#18347d">
+         <font>
+            <Font name="Cooper Black" size="25.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="46.0" fitWidth="46.0" layoutX="431.0" layoutY="326.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/football-player.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="46.0" fitWidth="46.0" layoutX="694.0" layoutY="327.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/calendar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="46.0" fitWidth="46.0" layoutX="694.0" layoutY="418.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/sponsor.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="46.0" fitWidth="46.0" layoutX="438.0" layoutY="418.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/newspaper.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnprofil" layoutX="70.0" layoutY="309.0" mnemonicParsing="false" onAction="#profil" prefHeight="83.0" prefWidth="171.0" style="-fx-background-color: #aac0f9;" text="Profil" textFill="#18347d">
+         <font>
+            <Font name="Cooper Black" size="21.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="52.0" fitWidth="46.0" layoutX="189.0" layoutY="327.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/man%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="46.0" fitWidth="64.0" layoutX="757.0" layoutY="493.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/logout%20(1).png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
