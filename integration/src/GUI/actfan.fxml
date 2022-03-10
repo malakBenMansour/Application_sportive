@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="488.0" prefWidth="837.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ActfanController">
+   <children>
+      <ImageView fitHeight="582.0" fitWidth="935.0" pickOnBounds="true">
+         <image>
+            <Image url="@img/6383f2c5c6dfa8b85c45fde859730056.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="#18347d" layoutX="357.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Actualités" wrappingWidth="413.6708984375">
+         <font>
+            <Font name="Cooper Black" size="36.0" />
+         </font>
+      </Text>
+      <Button fx:id="txtacceuil" layoutX="746.0" layoutY="534.0" mnemonicParsing="false" onAction="#acceuil" prefHeight="45.0" prefWidth="169.0" style="-fx-background-color: #aac0f9;" text="Acceuil" textFill="#18347d">
+         <font>
+            <Font name="Cooper Black" size="24.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="33.0" fitWidth="30.0" layoutX="878.0" layoutY="544.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/home%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgact" fitHeight="150.0" fitWidth="229.0" layoutX="506.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="468.0" layoutY="253.0" text="Titre" textFill="#a56dbf">
+         <font>
+            <Font name="Cooper Black" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="443.0" layoutY="307.0" text="Description" textFill="#a56dbf">
+         <font>
+            <Font name="Cooper Black" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="396.0" layoutY="412.0" text="Date de l'actualité" textFill="#a56dbf">
+         <font>
+            <Font name="Cooper Black" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="ltitre" layoutX="599.0" layoutY="253.0" prefHeight="25.0" prefWidth="293.0" textFill="#a56dbf">
+         <font>
+            <Font name="Cooper Black" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="ldesc" layoutX="601.0" layoutY="305.0" prefHeight="45.0" prefWidth="300.0" textFill="#a56dbf">
+         <font>
+            <Font name="Cooper Black" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="ldate" layoutX="604.0" layoutY="412.0" prefHeight="25.0" prefWidth="284.0" textFill="#a56dbf">
+         <font>
+            <Font name="Cooper Black" size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnprec" alignment="TOP_RIGHT" layoutX="433.0" layoutY="456.0" mnemonicParsing="false" onAction="#previous" prefHeight="45.0" prefWidth="179.0" style="-fx-background-color: #aac0f9;" text="Précédent" textFill="#18347d">
+         <font>
+            <Font name="Cooper Black" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnsuiv" alignment="TOP_LEFT" layoutX="640.0" layoutY="457.0" mnemonicParsing="false" onAction="#next" prefHeight="45.0" prefWidth="179.0" style="-fx-background-color: #aac0f9;" text=" Suivant" textFill="#18347d">
+         <font>
+            <Font name="Cooper Black" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnimp" alignment="TOP_LEFT" layoutX="148.0" layoutY="156.0" mnemonicParsing="false" onAction="#print" prefHeight="45.0" prefWidth="169.0" style="-fx-background-color: #aac0f9;" text="Imprimer" textFill="#18347d">
+         <font>
+            <Font name="Cooper Black" size="24.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="33.0" fitWidth="30.0" layoutX="285.0" layoutY="164.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/pdf%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="33.0" fitWidth="30.0" layoutX="783.0" layoutY="465.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/icons8-last-50.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="33.0" fitWidth="30.0" layoutX="434.0" layoutY="466.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/icons8-first-50.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

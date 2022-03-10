@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="594.0" prefWidth="843.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.MenurecController">
+   <children>
+      <ImageView fitHeight="675.0" fitWidth="1206.0" pickOnBounds="true">
+         <image>
+            <Image url="@img/fondd.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="#d5dff8" layoutX="255.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenue au Connect Sport" textAlignment="CENTER" wrappingWidth="678.3818359375">
+         <font>
+            <Font name="Cooper Black" size="56.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="94.0" fitWidth="99.0" layoutX="14.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/connect.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnrec" layoutX="146.0" layoutY="259.0" mnemonicParsing="false" onAction="#ouvrirrec" prefHeight="147.0" prefWidth="407.0" style="-fx-background-color: #aac0f9;" text="Réclamations" textFill="#18347d">
+         <font>
+            <Font name="Cooper Black" size="34.0" />
+         </font>
+      </Button>
+      <Button fx:id="btncat" layoutX="617.0" layoutY="259.0" mnemonicParsing="false" onAction="#ouvrircat" prefHeight="147.0" prefWidth="401.0" style="-fx-background-color: #aac0f9;" text="Catégories" textFill="#18347d">
+         <font>
+            <Font name="Cooper Black" size="33.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnacceuil" layoutX="933.0" layoutY="532.0" mnemonicParsing="false" onAction="#acceuil" prefHeight="61.0" prefWidth="248.0" style="-fx-background-color: #aac0f9;" text="Acceuil" textFill="#18347d">
+         <font>
+            <Font name="Cooper Black" size="24.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="61.0" fitWidth="75.0" layoutX="479.0" layoutY="297.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/planner.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="69.0" fitWidth="61.0" layoutX="930.0" layoutY="298.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/sponsor.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="61.0" fitWidth="61.0" layoutX="938.0" layoutY="532.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/home%20(1).png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="649.0" prefWidth="1035.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Add_catController">
+   <children>
+      <HBox layoutX="10.0" layoutY="10.0" prefHeight="68.0" prefWidth="984.0" style="-fx-background-color: b399cc;">
+         <children>
+            <HBox prefHeight="68.0" prefWidth="270.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="68.0" prefWidth="233.0" style="-fx-background-color: transparent;" text="Connect Sport" textFill="#b3c4f0" translateX="-10.0">
+                     <font>
+                        <Font name="Cooper Black" size="22.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="59.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true" translateX="-10.0" translateY="5.0">
+                     <image>
+                        <Image url="@img/connect.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox prefHeight="68.0" prefWidth="229.0" translateX="450.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="68.0" prefWidth="166.0" style="-fx-background-color: transparent;" text="UserName" textFill="#b3c4f0" translateX="10.0">
+                     <font>
+                        <Font name="Cooper Black" size="24.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="35.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true" translateY="12.0">
+                     <image>
+                        <Image url="@img/notifications.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <ImageView fitHeight="44.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" translateX="430.0" translateY="13.0">
+               <image>
+                  <Image url="@img/logout.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="78.0" prefHeight="570.0" prefWidth="222.0">
+         <children>
+            <ImageView fitHeight="571.0" fitWidth="223.0" pickOnBounds="true">
+               <image>
+                  <Image url="@img/b8f5baac53edd782469eee4e3ac5ae28.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <Text fill="#18347d" layoutX="388.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter une catégorie" wrappingWidth="594.6708984375">
+         <font>
+            <Font name="Cooper Black" size="42.0" />
+         </font>
+      </Text>
+      <TextField fx:id="tfNom" layoutX="524.0" layoutY="239.0" prefHeight="79.0" prefWidth="351.0" />
+      <Label layoutX="286.0" layoutY="266.0" text="Nom de la catégorie" textFill="#a56dbf">
+         <font>
+            <Font name="Cooper Black" size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnValider" layoutX="437.0" layoutY="557.0" mnemonicParsing="false" onAction="#saveCategorie" prefHeight="59.0" prefWidth="197.0" style="-fx-background-color: #b182d3;" text="Ajouter" textFill="#18347d">
+         <font>
+            <Font name="Cooper Black" size="28.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnacceuil" layoutX="710.0" layoutY="557.0" mnemonicParsing="false" onAction="#retourAcceuil" prefHeight="59.0" prefWidth="166.0" style="-fx-background-color: #b182d3;" text="Acceuil" textFill="#18347d">
+         <font>
+            <Font name="Cooper Black" size="27.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="28.0" fitWidth="26.0" layoutX="849.0" layoutY="575.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/home%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="45.0" layoutX="586.0" layoutY="572.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/add-user.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

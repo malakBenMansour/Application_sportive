@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="488.0" prefWidth="837.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.EventfanController">
+   <children>
+      <ImageView fitHeight="488.0" fitWidth="837.0" pickOnBounds="true">
+         <image>
+            <Image url="@img/6383f2c5c6dfa8b85c45fde859730056.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="#18347d" layoutX="342.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LISTE EVENEMENTS" wrappingWidth="413.6708984375">
+         <font>
+            <Font name="Cooper Black" size="36.0" />
+         </font>
+      </Text>
+      <Button fx:id="reserv" layoutX="365.0" layoutY="429.0" mnemonicParsing="false" onAction="#reserver" prefHeight="45.0" prefWidth="194.0" style="-fx-background-color: #aac0f9;" text="réserver">
+         <font>
+            <Font name="Cooper Black" size="24.0" />
+         </font></Button>
+      <ImageView fitHeight="41.0" fitWidth="43.0" layoutX="512.0" layoutY="433.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/reserve.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="txtacceuil" layoutX="615.0" layoutY="429.0" mnemonicParsing="false" onAction="#acceuil" prefHeight="45.0" prefWidth="169.0" style="-fx-background-color: #aac0f9;" text="acceuil">
+         <font>
+            <Font name="Cooper Black" size="24.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="33.0" fitWidth="30.0" layoutX="747.0" layoutY="437.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/home%20(1).png" />
+         </image>
+      </ImageView>
+      <VBox fx:id="box" layoutX="82.0" layoutY="83.0" prefHeight="307.0" prefWidth="726.0" />
+   </children>
+</AnchorPane>

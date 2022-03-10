@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="638.0" prefWidth="984.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ContratController">
+   <children>
+      <HBox prefHeight="68.0" prefWidth="984.0" style="-fx-background-color: b399cc;">
+         <children>
+            <HBox prefHeight="68.0" prefWidth="270.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="68.0" prefWidth="233.0" style="-fx-background-color: transparent;" text="Connect Sport" textFill="#b3c4f0" translateX="-10.0">
+                     <font>
+                        <Font name="Cooper Black" size="22.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="59.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true" translateX="-10.0" translateY="5.0">
+                     <image>
+                        <Image url="@img/connect.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox prefHeight="68.0" prefWidth="229.0" translateX="450.0">
+               <children>
+                  <Button fx:id="logout" mnemonicParsing="false" onAction="#out" prefHeight="60.0" prefWidth="75.0" style="-fx-background-color: transparent;" translateX="190.0" />
+               </children>
+            </HBox>
+            <ImageView fitHeight="44.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" translateX="430.0" translateY="13.0">
+               <image>
+                  <Image url="@img/logout.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <HBox layoutY="68.0" prefHeight="570.0" prefWidth="222.0">
+         <children>
+            <ImageView fitHeight="571.0" fitWidth="250.0" pickOnBounds="true">
+               <image>
+                  <Image url="@img/b8f5baac53edd782469eee4e3ac5ae28.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <Text fill="#18347d" layoutX="378.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter un Contrat" wrappingWidth="594.6708984375">
+         <font>
+            <Font name="Cooper Black" size="42.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtnom" layoutX="398.0" layoutY="181.0" prefHeight="35.0" prefWidth="176.0" />
+      <ComboBox fx:id="txttype" layoutX="399.0" layoutY="250.0" prefHeight="31.0" prefWidth="187.0" />
+      <Label layoutX="313.0" layoutY="186.0" text="Nom" textFill="#a56dbf">
+         <font>
+            <Font name="Cooper Black" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="620.0" layoutY="186.0" text="Date Contrat" textFill="#a56dbf">
+         <font>
+            <Font name="Cooper Black" size="21.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="txtdatec" layoutX="783.0" layoutY="183.0" prefHeight="31.0" prefWidth="187.0" />
+      <Label layoutX="313.0" layoutY="253.0" prefHeight="25.0" prefWidth="111.0" text="Type" textFill="#a56dbf">
+         <font>
+            <Font name="Cooper Black" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="605.0" layoutY="253.0" prefHeight="25.0" prefWidth="166.0" text="Nom Personnel" textFill="#a56dbf">
+         <font>
+            <Font name="Cooper Black" size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="butajoutc" layoutX="417.0" layoutY="395.0" mnemonicParsing="false" onAction="#addcontrat" prefHeight="59.0" prefWidth="197.0" style="-fx-background-color: #b182d3;" text="Ajouter" textFill="#18347d">
+         <font>
+            <Font name="Cooper Black" size="28.0" />
+         </font>
+      </Button>
+      <Button fx:id="txtacceuil" layoutX="679.0" layoutY="395.0" mnemonicParsing="false" onAction="#retourAcceuil" prefHeight="59.0" prefWidth="176.0" style="-fx-background-color: #b182d3;" text="Acceuil" textFill="#18347d" translateX="-25.0">
+         <font>
+            <Font name="Cooper Black" size="27.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="28.0" fitWidth="26.0" layoutX="804.0" layoutY="412.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/home%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="45.0" layoutX="566.0" layoutY="407.0" pickOnBounds="true" preserveRatio="true" translateX="8.0">
+         <image>
+            <Image url="@img/contract.png" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="txtidp" layoutX="783.0" layoutY="250.0" prefHeight="31.0" prefWidth="187.0" />
+   </children>
+</AnchorPane>

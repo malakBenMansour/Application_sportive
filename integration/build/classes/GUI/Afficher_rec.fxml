@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="637.0" prefWidth="1206.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Afficher_recController">
+   <children>
+      <HBox prefHeight="84.0" prefWidth="1206.0" style="-fx-background-color: b399cc;">
+         <children>
+            <ImageView fitHeight="73.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/connect.png" />
+               </image>
+            </ImageView>
+            <Text fill="#d5dff8" strokeType="OUTSIDE" strokeWidth="0.0" text="Connect Sport" translateX="20.0" translateY="10.0" wrappingWidth="326.3818359375">
+               <font>
+                  <Font name="Cooper Black" size="40.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <ImageView fitHeight="572.0" fitWidth="1206.0" layoutY="84.0" pickOnBounds="true">
+         <image>
+            <Image url="@img/aziz.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnajout" alignment="TOP_LEFT" layoutX="558.0" layoutY="151.0" mnemonicParsing="false" onAction="#ajouter" prefHeight="39.0" prefWidth="138.0" style="-fx-background-color: b3c4f0;" text="Ajouter">
+         <font>
+            <Font name="Cooper Black" size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnsupprimer" alignment="TOP_LEFT" layoutX="712.0" layoutY="153.0" mnemonicParsing="false" onAction="#supprimer" prefHeight="39.0" prefWidth="164.0" style="-fx-background-color: b3c4f0;" text="Supprimer">
+         <font>
+            <Font name="Cooper Black" size="19.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="39.0" fitWidth="39.0" layoutX="837.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/delete11.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtrecherche" layoutX="14.0" layoutY="158.0" prefHeight="39.0" prefWidth="211.0" />
+      <Button fx:id="btnretour" layoutX="1072.0" layoutY="562.0" mnemonicParsing="false" onAction="#retourHome" prefHeight="73.0" prefWidth="118.0" style="-fx-background-color: transparent;">
+         <font>
+            <Font name="Cooper Black" size="19.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="1105.0" layoutY="575.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/home-button.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnnbj" layoutX="27.0" layoutY="90.0" mnemonicParsing="false" onAction="#nbrjoueur" prefHeight="46.0" prefWidth="263.0" style="-fx-background-color: b3c4f0;" text="Nombre de réclamations">
+         <font>
+            <Font name="Cooper Black" size="19.0" />
+         </font>
+      </Button>
+      <TextField fx:id="nbrec" editable="false" layoutX="300.0" layoutY="91.0" prefHeight="46.0" prefWidth="46.0" />
+      <TableView fx:id="tbrec" layoutX="6.0" layoutY="228.0" prefHeight="328.0" prefWidth="1196.0" stylesheets="@personnel.css">
+         <columns>
+            <TableColumn fx:id="col_id" prefWidth="55.0" text="ID" visible="false" />
+            <TableColumn fx:id="col_titre" prefWidth="95.0" text="Titre" />
+            <TableColumn fx:id="col_desc" prefWidth="271.0" text="Description" />
+            <TableColumn fx:id="col_dat" prefWidth="207.0" text="Date d'ajout" />
+            <TableColumn fx:id="col_cat" minWidth="0.0" prefWidth="197.0" text="Catégorie" />
+            <TableColumn fx:id="col_etat" prefWidth="102.0" text="Etat" />
+            <TableColumn fx:id="col_per" prefWidth="194.0" text="Personne" />
+            <TableColumn fx:id="col_com" prefWidth="127.0" text="Num commande" />
+         </columns>
+      </TableView>
+      <ComboBox fx:id="comborec" layoutX="237.0" layoutY="161.0" prefWidth="150.0" style="-fx-background-color: b3c4f0;" />
+      <RadioButton fx:id="asc" layoutX="404.0" layoutY="152.0" mnemonicParsing="false" onAction="#ordreact" selected="true" text="Croissant">
+         <toggleGroup>
+            <ToggleGroup fx:id="ordre" />
+         </toggleGroup>
+         <font>
+            <Font name="Cooper Black" size="15.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="desc" layoutX="402.0" layoutY="186.0" mnemonicParsing="false" onAction="#ordreact" text="Décroissant" toggleGroup="$ordre">
+         <font>
+            <Font name="Cooper Black" size="15.0" />
+         </font></RadioButton>
+      <Button alignment="TOP_LEFT" layoutX="1014.0" layoutY="152.0" mnemonicParsing="false" onAction="#showchart" prefHeight="39.0" prefWidth="175.0" style="-fx-background-color: b3c4f0;" text="Statistiques">
+         <font>
+            <Font name="Cooper Black" size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnexcel" alignment="TOP_LEFT" layoutX="892.0" layoutY="153.0" mnemonicParsing="false" onAction="#exportExcel" prefHeight="39.0" prefWidth="114.0" style="-fx-background-color: b3c4f0;" text="Excel">
+         <font>
+            <Font name="Cooper Black" size="19.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="39.0" fitWidth="39.0" layoutX="655.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/plus%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="39.0" fitWidth="39.0" layoutX="969.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/sheet.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="39.0" fitWidth="39.0" layoutX="1148.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/stats.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
